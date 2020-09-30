@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Taxi Driver" startnode="4" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
+<tw-storydata name="The Taxi Driver" startnode="29" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
   display: none;
 }
 
@@ -108,6 +108,36 @@ tw-story[tags~=in-cab]{
 
 tw-story[tags~=rearview-mirror]{
   	background-image: url("images/rearview_mirror_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+tw-story[tags~=sympathy]{
+  	background-image: url("images/sympathetic_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+tw-story[tags~=old-building]{
+  	background-image: url("images/old-building_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+tw-story[tags~=old-neighborhood]{
+  	background-image: url("images/old-neighborhood_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+tw-story[tags~=ballroom]{
+  	background-image: url("images/ballroom_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+tw-story[tags~=staring]{
+  	background-image: url("images/staring_0.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -424,23 +454,62 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (click: ?page)[&quot;I don&#39;t have any family left,&quot; her voice moves from excitement to a sad one... &quot;The doctor says I don&#39;t have very long.&quot;]
 
-(click: ?page)[You can now be:&lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Sympathetic, and turn off the meter -&gt;Sympathetic]]
+(click: ?page)[You can now:&lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Be sympathetic, and turn off the meter -&gt;Sympathetic]]
 [[2. Keep driving, as you still need your wage -&gt;Unsympathetic]]]&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Mirror2" tags="" position="599,1900" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[You look into the rearview mirror, and you see her glistening eyes, however long enough for her to notice your concern.]
         
 (click: ?page)[&quot;I don&#39;t have any family left,&quot; her voice moves from excitement to a sad one... &quot;The doctor says I don&#39;t have very long.&quot;]
         
-(click: ?page)[You can now be: &lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Sympathetic, and turn off the meter -&gt;Sympathetic]]
+(click: ?page)[You can now: &lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Be sympathetic, and turn off the meter -&gt;Sympathetic]]
 [[2. Keep driving, as you still need your wage -&gt;Unsympathetic]]]&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Mirror3" tags="rearview-mirror" position="800,1900" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[You look into the rearview mirror, and you see her glistening eyes with tears, however long enough for her to notice your concern.]
         
 (click: ?page)[&quot;I don&#39;t have any family left,&quot; her voice moves from excitement to a sad one... &quot;The doctor says I don&#39;t have very long.&quot;]
         
-(click: ?page)[You can now be: &lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Sympathetic, and turn off the meter -&gt;Sympathetic]]
+(click: ?page)[You can now: &lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Be sympathetic, and turn off the meter -&gt;Sympathetic]]
 [[2. Keep driving, as you still need your wage -&gt;Unsympathetic]]]&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Sympathetic" tags="" position="500,2199" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Unsympathetic" tags="" position="700,2200" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Sympathetic" tags="sympathy" position="502,2200" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;(click: ?page)[&quot;What route would you like me to take?&quot; you ask her.]
+        
+(click: ?page)[And for the next two hours you take her around the city. She has you drive around the places that surrounded her life.]
+        
+(click: ?page)[The first place she shows you is...]
+            
+(click: ?page)[[[Continue -&gt;Place1]]]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Unsympathetic" tags="sympathy" position="701,2201" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;(click: ?page)[&quot;What route would you like me to take?&quot; you ask her.]
+        
+(click: ?page)[And for the next two hours you take her around the city. She has you drive around the places that surrounded her life.]
+        
+(click: ?page)[The first place she shows you is...]
+            
+(click: ?page)[[[Continue -&gt;Place1]]]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Place1" tags="old-building" position="601,2400" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;She first shows you an old building where she worked for the first time as an elevator operator.
+
+(click: ?page)[[[Continue -&gt;Place2]]]
+&lt;/p&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="32" name="Place2" tags="old-neighborhood" position="599,2601" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;You then arrive at the first place where she and her husband stayed as newlyweds.
+
+(click: ?page)[[[Continue -&gt;Place3]]]
+&lt;/p&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="33" name="Place3" tags="ballroom" position="600,2798" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;She has you pull up of an old furniture warehouse, and you wonder how does this tie to her past.
+
+(click: ?page)[She tells you that this was the ballroom that she used to go dancing as a little girl.]
+
+(click: ?page)[[[Continue -&gt;Place4]]]
+&lt;/p&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="34" name="Place4" tags="staring" position="600,2998" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;You continue driving her around, and sometimes she&#39;d ask you to slow down in front of a particular building or corner. She&#39;d just stare into the dark abyss and say nothing.
+
+(click: ?page)[&quot;To her could these be places that have either sorrowful or joyful memories?&quot;, you think to yourself.]
+
+(click: ?page)[[[Continue -&gt;Somewhere]]]&lt;/p&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="35" name="Somewhere" tags="" position="600,3148" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
