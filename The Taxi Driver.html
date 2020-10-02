@@ -142,6 +142,14 @@ tw-story[tags~=staring]{
     background-size: 100% 100%;
 }
 
+tw-story[tags~=sunset]{
+  	background-image: url("images/sunset_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
 /*css to centralize text, transparent box, adn images*/
 .transbox{
   justify-content: center;
@@ -512,10 +520,18 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 &lt;/div&gt;]</tw-passagedata><tw-passagedata pid="34" name="Place4" tags="staring" position="600,2998" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You continue driving her around, and sometimes she&#39;d ask you to slow down in front of a particular building or corner. She&#39;d just stare into the dark abyss and say nothing.
 
-(click: ?page)[&quot;To her could these be places that have either sorrowful or joyful memories?&quot;, you think to yourself.]
+(click: ?page)[&quot;To her these might be places that have either joyful or sorrowful memories.&quot;, you think to yourself.]
 
-(click: ?page)[[[Continue -&gt;Somewhere]]]&lt;/p&gt;
-&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="35" name="Somewhere" tags="" position="602,3199" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="36" name="CHOICE VARIABLES" tags="" position="68,1880" size="200,100">Choose 1 {
+(click: ?page)[[[Continue -&gt;Reach Home]]]&lt;/p&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="35" name="Reach Home" tags="sunset" position="600,3198" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;(click: ?page)[As the first hint of sun was creasing the horizon, &#39;I&#39;m tired. Let&#39;s go now&#39;, she says suddenly.]
+
+(click: ?page)[The air gets thick, the experiences of today make you wonder what it&#39;d be like for you if or when you are that old. You can&#39;t think of anything to say, even if you did you didn&#39;t know if you should say it and a deafening silence breaks in.]
+
+(click: ?page)[With only the beautiful sunset to look at, you continue driving her to the address she had given you.]
+
+(click: ?page)[[[Continue -&gt;Care Home]]]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="CHOICE VARIABLES" tags="" position="257,2985" size="200,100">Choose 1 {
 /* Driver first arrives at the house*/
 	choice1: Wait,
 	choice1: Knock,
@@ -612,7 +628,7 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[The first place she shows you is...]
             
 (click: ?page)[[[Continue -&gt;Place1]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata></tw-storydata>
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Care Home" tags="" position="600,3348" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
