@@ -416,7 +416,7 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (click: ?page)[[[Get in the car -&gt;Drive3]]]&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Help" tags="walk-up" position="201,1009" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(click: ?page)[You start making your way to the house, as you begin to worry and thought to see for your self if something was wrong. You think to yourself &quot;I sure hope it just might be in my head.&quot;]
+&lt;p&gt;(event: when time &gt; 3s)[You start making your way to the house, as you begin to worry and thought to see for your self if something was wrong. You think to yourself &quot;I sure hope it just might be in my head.&quot;]
 
 (event: when time &gt; 5s)[(click: ?page)[As you hasten up the stairs, &quot;Just a minute!&quot; calls out, a fraile and elderly voice.]
                 
@@ -424,19 +424,24 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]]&lt;/p&gt;
 &lt;/div&gt;
-(event: when time &gt; 2s)[{(track: &#39;walking-up-stairs&#39;, &#39;playwhenpossible&#39;)}]</tw-passagedata><tw-passagedata pid="20" name="Kick Back" tags="kick-back" position="397,865" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+{(track: &#39;walking-up-stairs&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="20" name="Kick Back" tags="kick-back" position="397,865" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[&quot;Agh! This heat must be getting to me, which is why I must be hearing things.&quot; You decide to keep waiting. You get out of the car wanting to strech your legs, and you walk around for a bit.]
 
 (click: ?page)[You then hear the sound of a lock unlocking, and it seems as if though someone is getting a hard time trying to unlock it. However by the time you reach the door, the door unlocks and what you see surprises you...]
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Door Opens" tags="door-opens" position="584,1004" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Door Opens" tags="door-opens" position="582,1003" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[A small woman, arguably in her 90&#39;s stands before you wearing a pillbox hat with a veil pinned on it. She seems like she came directly out of a movie from the 1940&#39;s.]
-(event: when time &gt; 4s)[(click: ?page)[&lt;div class=&quot;c_image&quot;&gt;&lt;img src=&quot;images/old-lady_0.jpg&quot; alt=&quot;Old Lady&quot; width=&quot;43%&quot;&gt;&lt;/div&gt;](click: ?page)[The interior of her house peaks your interest.]
-(click: ?page)[[[Peak inside -&gt;View House]]]]&lt;/p&gt;&lt;/div&gt;
-{(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="22" name="Issues" tags="" position="1000,372" size="200,100">* Welcome needs a new background
+
+(event: when time &gt; 4s)[(click: ?page)[&lt;div class=&quot;c_image&quot;&gt;&lt;img src=&quot;images/old-lady_0.jpg&quot; alt=&quot;Old Lady&quot; width=&quot;40%&quot; height=&quot;15%&quot;&gt;&lt;/div&gt;]
+(click: ?page)[The interior of her house peaks your interest.]
+
+(click: ?page)[[[Peak inside -&gt;View House]]]]&lt;/p&gt;
+&lt;/div&gt;{(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="22" name="Issues" tags="" position="1000,373" size="200,100">* Welcome needs a new background
 * Helping hand needs a new background
-* Wait for her needs a new background</tw-passagedata><tw-passagedata pid="23" name="Drive1" tags="in-cab" position="1278,1754" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+* Wait for her needs a new background
+
+REMOVE FULLSCREEN UNLESS IT IS IN FULLSCREEN!</tw-passagedata><tw-passagedata pid="23" name="Drive1" tags="in-cab" position="1278,1754" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[Before you can start your car, she calls you &quot;Son ...&quot;, with a beautiful smile hands you an address and asks you &quot;Could you drive through downtown?&quot;]
 
 (event: when time &gt; 4s)[(click: ?page)[You reply &quot;It&#39;s not the shortest way&quot;]
@@ -538,7 +543,7 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 &lt;/div&gt;]</tw-passagedata><tw-passagedata pid="35" name="Reach Home" tags="sunset" position="645,2744" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[As the first hint of sun was creasing the horizon, &#39;I&#39;m tired. Let&#39;s go now&#39;, she says suddenly.]
 
-(click: ?page)[The air gets thick, the experiences of today make you wonder what it&#39;d be like for you if or when you are that old. You can&#39;t think of anything to say, even if you did you didn&#39;t know if you should say it and a deafening silence breaks in.]
+(click: ?page)[The air gets thick, the experiences of today makes you wonder what it&#39;d be like for you if or when you are that old. You can&#39;t think of anything to say, even if you did you didn&#39;t know if you should say it and a deafening silence breaks in.]
 
 (click: ?page)[With only the beautiful sunset to look at, you continue driving her to the address she had given you.]
 
@@ -640,8 +645,8 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[The first place she shows you is...]
             
 (click: ?page)[[[Continue -&gt;Place1]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Care Home" tags="" position="646,2918" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;Finally you arrive at the address, she had wanted to come to in the first place. The building was a low building, a small convalescent home, that passed under a portico.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Care Home" tags="care-home" position="646,2918" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;(click: ?page)[Finally you arrive at the address, she had wanted to come to in the first place. The building was a low building, a small convalescent home, that passed under a portico.]
 
 (click: ?page)[Two orderlies came out to the cab as soon as we pulled up. They were solicitous and intent, watching her every move.]
 
@@ -650,7 +655,7 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[You get to the trunk to get her bag to the car.]
 
 (click: ?page)[[[Get her bag -&gt;Trunk]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="" position="649,3102" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="wheelchair" position="649,3102" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[
 
 (click: ?page)[]
