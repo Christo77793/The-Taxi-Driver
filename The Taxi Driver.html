@@ -148,7 +148,17 @@ tw-story[tags~=sunset]{
     background-size: 100% 100%;
 }
 
+tw-story[tags~=care-home]{
+  	background-image: url("images/care-home_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
+tw-story[tags~=wheelchair]{
+  	background-image: url("images/care-home_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
 /*css to centralize text, transparent box, adn images*/
 .transbox{
@@ -316,7 +326,9 @@ open-door: ./effects/open_door.mp3
 
 walking-up-stairs: ./effects/walking_up_stairs.mp3
 
-car-door: ./effects/car_door.mp3</tw-passagedata><tw-passagedata pid="7" name="Choose 1" tags="taxi_wait" position="552,546" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+car-door: ./effects/car_door.mp3
+
+trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="7" name="Choose 1" tags="taxi_wait" position="552,546" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[&quot;What in the world is keeping them!&quot; you think to yourself.]
 
 (event: when time &gt; 3s)[(click: ?page)[Inner conflict arises as you wish you could just take off, but as a taxie driver you also believe it is your duty to wait.]
@@ -355,8 +367,8 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (click: ?page)[Her fraile yet gentle voice calls out once again saying &quot;Would you be so kind and carry my bag out to the car?&quot;]
 
-(click: ?page)[[[Help her carry the bags -&gt;Choose 2 TEST]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Choose 2" tags="backpack" position="1294,1385" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+(click: ?page)[[[Help her carry the bags -&gt;Choose 2]]]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Choose 2 E" tags="backpack" position="1294,1385" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[You carry her bag out to the car and put it into the trunk of the car. ]
 
 (click: ?page)[You turn around, you glance at her, and you then start to wonder if she might need help walking up to the car.]
@@ -403,7 +415,7 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 (click: ?page)[You help her back into the car and you start to regret that you hadn&#39;t helped her or atleast stood by to help if she required it.]
 
 (click: ?page)[[[Get in the car -&gt;Drive3]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Help" tags="walk-up" position="152,952" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Help" tags="walk-up" position="201,1009" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[You start making your way to the house, as you begin to worry and thought to see for your self if something was wrong. You think to yourself &quot;I sure hope it just might be in my head.&quot;]
 
 (event: when time &gt; 5s)[(click: ?page)[As you hasten up the stairs, &quot;Just a minute!&quot; calls out, a fraile and elderly voice.]
@@ -412,13 +424,13 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]]&lt;/p&gt;
 &lt;/div&gt;
-(event: when time &gt; 2s)[{(track: &#39;walking-up-stairs&#39;, &#39;playwhenpossible&#39;)}]</tw-passagedata><tw-passagedata pid="20" name="Kick Back" tags="kick-back" position="340,839" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+(event: when time &gt; 2s)[{(track: &#39;walking-up-stairs&#39;, &#39;playwhenpossible&#39;)}]</tw-passagedata><tw-passagedata pid="20" name="Kick Back" tags="kick-back" position="397,865" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[&quot;Agh! This heat must be getting to me, which is why I must be hearing things.&quot; You decide to keep waiting. You get out of the car wanting to strech your legs, and you walk around for a bit.]
 
 (click: ?page)[You then hear the sound of a lock unlocking, and it seems as if though someone is getting a hard time trying to unlock it. However by the time you reach the door, the door unlocks and what you see surprises you...]
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Door Opens" tags="door-opens" position="582,989" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Door Opens" tags="door-opens" position="584,1004" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[A small woman, arguably in her 90&#39;s stands before you wearing a pillbox hat with a veil pinned on it. She seems like she came directly out of a movie from the 1940&#39;s.]
 (event: when time &gt; 4s)[(click: ?page)[&lt;div class=&quot;c_image&quot;&gt;&lt;img src=&quot;images/old-lady_0.jpg&quot; alt=&quot;Old Lady&quot; width=&quot;43%&quot;&gt;&lt;/div&gt;](click: ?page)[The interior of her house peaks your interest.]
 (click: ?page)[[[Peak inside -&gt;View House]]]]&lt;/p&gt;&lt;/div&gt;
@@ -500,30 +512,30 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 (click: ?page)[The first place she shows you is...]
             
 (click: ?page)[[]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Place1" tags="old-building" position="605,2397" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Place1" tags="old-building" position="767,2299" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;She first shows you an old building where she worked for the first time as an elevator operator.
 
 (click: ?page)[[[Continue -&gt;Place2]]]
 &lt;/p&gt;
-&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="32" name="Place2" tags="old-neighborhood" position="600,2601" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="32" name="Place2" tags="old-neighborhood" position="467,2394" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You then arrive at the first place where she and her husband stayed as newlyweds.
 
 (click: ?page)[[[Continue -&gt;Place3]]]
 &lt;/p&gt;
-&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="33" name="Place3" tags="ballroom" position="600,2798" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="33" name="Place3" tags="ballroom" position="770,2491" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;She has you pull up of an old furniture warehouse, and you wonder how does this tie to her past.
 
 (click: ?page)[She tells you that this was the ballroom that she used to go dancing as a little girl.]
 
 (click: ?page)[[[Continue -&gt;Place4]]]
 &lt;/p&gt;
-&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="34" name="Place4" tags="staring" position="600,2998" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="34" name="Place4" tags="staring" position="468,2581" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You continue driving her around, and sometimes she&#39;d ask you to slow down in front of a particular building or corner. She&#39;d just stare into the dark abyss and say nothing.
 
 (click: ?page)[&quot;To her these might be places that have either joyful or sorrowful memories.&quot;, you think to yourself.]
 
 (click: ?page)[[[Continue -&gt;Reach Home]]]&lt;/p&gt;
-&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="35" name="Reach Home" tags="sunset" position="600,3198" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="35" name="Reach Home" tags="sunset" position="645,2744" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[As the first hint of sun was creasing the horizon, &#39;I&#39;m tired. Let&#39;s go now&#39;, she says suddenly.]
 
 (click: ?page)[The air gets thick, the experiences of today make you wonder what it&#39;d be like for you if or when you are that old. You can&#39;t think of anything to say, even if you did you didn&#39;t know if you should say it and a deafening silence breaks in.]
@@ -531,7 +543,7 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 (click: ?page)[With only the beautiful sunset to look at, you continue driving her to the address she had given you.]
 
 (click: ?page)[[[Continue -&gt;Care Home]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="CHOICE VARIABLES" tags="" position="257,2985" size="200,100">Choose 1 {
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="CHOICE VARIABLES" tags="" position="254,2867" size="200,100">Choose 1 {
 /* Driver first arrives at the house*/
 	choice1: Wait,
 	choice1: Knock,
@@ -549,7 +561,7 @@ Choose 3{
 /*Driver can switch of meter*/
 	choice3: Meter_On,
 	choice3: Meter_Off
-}</tw-passagedata><tw-passagedata pid="37" name="Choose 2 TEST" tags="backpack" position="593,1386" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="37" name="Choose 2" tags="backpack" position="593,1386" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[You carry her bag out to the car and put it into the trunk of the car. ]
 
 (click: ?page)[You turn around, you glance at her, and you then start to wonder if she might need help walking up to the car.]
@@ -628,7 +640,30 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[The first place she shows you is...]
             
 (click: ?page)[[[Continue -&gt;Place1]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Care Home" tags="" position="600,3348" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Care Home" tags="" position="646,2918" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;Finally you arrive at the address, she had wanted to come to in the first place. The building was a low building, a small convalescent home, that passed under a portico.
+
+(click: ?page)[Two orderlies came out to the cab as soon as we pulled up. They were solicitous and intent, watching her every move.]
+
+(click: ?page)[&quot;They must have been expecting her&quot;, you think to yourself.]
+
+(click: ?page)[You get to the trunk to get her bag to the car.]
+
+(click: ?page)[[[Get her bag -&gt;Trunk]]]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="" position="649,3102" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;(event: when time &gt; 2s)[
+
+(click: ?page)[]
+
+(click: ?page)[]
+
+(click: ?page)[]
+
+(click: ?page)[]]&lt;/p&gt;
+&lt;/div&gt;
+{
+(track: &#39;trunk-closing&#39;, &#39;playwhenpossible&#39;)
+}</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
