@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Taxi Driver" startnode="40" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
+<tw-storydata name="The Taxi Driver" startnode="4" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
   display: none;
 }
 
@@ -661,7 +661,7 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[You get to the trunk to get her bag to the car.]
 
 (click: ?page)[[[Get her bag -&gt;Trunk]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="wheelchair" position="601,3101" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="wheelchair" position="600,3100" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[By the time you take out the bag and close the trunk, she was seated in her wheelchair. Reaching into her purse she asks ...
 
 {(if: $choice3 is &quot;Meter_Off&quot;)[
@@ -701,7 +701,8 @@ Having driven her around for over 2 hours, the meter gave rise to a significant 
 {
 &lt;!-- [[Money]] --&gt;
 (track: &#39;trunk-closing&#39;, &#39;playwhenpossible&#39;)
-}</tw-passagedata><tw-passagedata pid="44" name="Hug her" tags="" position="599,3300" size="100,100">(click: ?page)[Without even thinking for a second, you bend and give her a hug. She holds on to you tightly.]
+}</tw-passagedata><tw-passagedata pid="44" name="Hug her" tags="" position="599,3300" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;Without even thinking for a second, you bend over and give her a hug. She holds on to you tightly.
 
 (click: ?page)[With a broken voice she says &quot;You gave an old woman a little moment of joy, Thank you!&quot;]
 
@@ -711,7 +712,8 @@ Having driven her around for over 2 hours, the meter gave rise to a significant 
 
 (click: ?page)[&quot;What if I had refused to take the run, or had honked once, then driven away?&quot;]
 
-(click: ?page)[[[Conclusion -&gt;The End]]]</tw-passagedata><tw-passagedata pid="45" name="Money" tags="" position="802,3201" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+(click: ?page)[[[Conclusion -&gt;The End]]]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Money" tags="" position="802,3200" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;{(if: $choice4 is &quot;Take&quot;)[(click: ?page)[
 Looking at the meter, you tell her the exact amount, and she pays it in whole.&lt;br&gt;&lt;br&gt;
 ]
@@ -724,7 +726,7 @@ You notice a hint of disapproval from the orderlies, but you just ignore them.&l
 ]
 }{
 (else-if: $choice4 is &quot;Nothing&quot;)[(click: ?page)[
-You turn around and just switch off the meter and you say ...&lt;br&gt;
+You turn around and just switch off the meter and you say ...&lt;br&gt;&lt;br&gt;
 ]
 
 (click: ?page)[
