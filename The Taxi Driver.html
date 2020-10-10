@@ -244,7 +244,7 @@ Almost without thinking, the driver bent and gave the lady a hug. She held on ti
 
 “You gave an old woman a little moment of joy,” she said. “Thank you.”
 
-The driver gave a final squeeze of the lady’s hand and the two turned to go their separate ways. As he got in the car and glanced over to her, the door was shut.</tw-passagedata><tw-passagedata pid="3" name="Story Board B" tags="" position="99,321" size="200,100">I arrived at the address and honked the horn. After waiting a few minutes I honked again. Since this was going to be my last ride of my shift I thought about just driving away, but instead I put the car in park and walked up to the door and knocked.. &#39;Just a minute&#39;, answered a frail, elderly voice. I could hear something being dragged across the floor.
+The driver gave a final squeeze of the lady’s hand and the two turned to go their separate ways. As he got in the car and glanced over to her, the door was shut.</tw-passagedata><tw-passagedata pid="3" name="Story Board B" tags="" position="99,301" size="200,100">I arrived at the address and honked the horn. After waiting a few minutes I honked again. Since this was going to be my last ride of my shift I thought about just driving away, but instead I put the car in park and walked up to the door and knocked.. &#39;Just a minute&#39;, answered a frail, elderly voice. I could hear something being dragged across the floor.
 
 After a long pause, the door opened. A small woman in her 90&#39;s stood before me. She was wearing a print dress and a pillbox hat with a veil pinned on it, like somebody out of a 1940&#39;s movie.
 
@@ -308,13 +308,13 @@ But great moments often catch us unaware-beautifully wrapped in what others may 
 (click: ?page)[We have adopted a method of presentation which we believe is not only engaging and entertaining but primarily focuses on showcasing the well known quote, &quot;patience is a virtue.&quot;]
 
 (click: ?page)[[[Let&#39;s begin -&gt;The Taxi Driver]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Arrival" tags="arrived" position="554,362" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(event: when time &gt; 3s)[You arrive at an address to pick up the last passenger for the day. You sound the horn, wishing to let them know that you&#39;ve arrived.]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Arrival" tags="arrived" position="554,362" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;You arrive at an address to pick up the last passenger for the day. You sound the horn, wishing to let them know that you&#39;ve arrived.
 
 (event: when time &gt; 4s)[(click: ?page)[After standing by for a couple of minutes, there&#39;s still no movement. No one came out, nor was there any response from within the house, so you decide to sound the horn again hoping to alert them of your arrival.]
 
 (click: ?page)[[[Sound the horn -&gt;Choose 1]]]]&lt;/p&gt;
-&lt;/div&gt;{(track: &#39;car-stops&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="6" name="hal.tracks" tags="" position="1109,75" size="200,100">background-music: ./music/background_music.mp3
+&lt;/div&gt;]{(track: &#39;car-stops&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="6" name="hal.tracks" tags="" position="1109,75" size="200,100">background-music: ./music/background_music.mp3
 
 horn:  ./effects/horn.mp3
 
@@ -328,15 +328,15 @@ walking-up-stairs: ./effects/walking_up_stairs.mp3
 
 car-door: ./effects/car_door.mp3
 
-trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="7" name="Choose 1" tags="taxi_wait" position="560,543" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(event: when time &gt; 2s)[&quot;What in the world is keeping them!&quot; you think to yourself.]
+trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="7" name="Choose 1" tags="taxi_wait" position="560,543" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;&quot;What in the world is keeping them!&quot; you think to yourself.
 
 (event: when time &gt; 3s)[(click: ?page)[Inner conflict arises as you wish you could just take off, but as a taxie driver you also believe it is your duty to wait.]
 
 (click: ?page)[You choose to... &lt;hr&gt;&lt;/p&gt;]&lt;div class=&quot;options&quot;&gt;[(click: ?page)[(link: &quot;1. Be patient and wait a bit longer&quot;)[ (set: $choice1 to &quot;Wait&quot;) (goto:&quot;Wait for them&quot;) ]
 (link: &quot;2. Walk up to the door and knock&quot;)[ (set: $choice1 to &quot;Knock&quot;) (goto:&quot;Knock&quot;) ]
 (link: &quot;3. Drive away you can&#39;t wait anymore&quot;)[ (set: $choice1 to &quot;Drive&quot;)  (goto:&quot;Drive off&quot;) ]]]]&lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt;]
 {
 &lt;!-- [[Wait for them]] --&gt;
 &lt;!-- [[Knock]] --&gt;
@@ -344,7 +344,7 @@ trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="
 (track: &#39;horn&#39;, &#39;playwhenpossible&#39;)
 (track: &#39;horn&#39;, &#39;volume&#39;, 0.3)
 }</tw-passagedata><tw-passagedata pid="8" name="Wait for them" tags="wait-car" position="214,676" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(click: ?page)[You decide that despite the circumstances that you&#39;d be patient and wait a little longer. The intolerable weather eventually gets to you and you doze off.]
+&lt;p&gt;You decide that despite the circumstances that you&#39;d be patient and wait a little longer. The intolerable weather eventually gets to you and you doze off.
 
 (click: ?page)[You awaken to an exclaiming sound; this is weird as you open your eyes and the area is still empty. You wonder if it was a call for help. ]
 
@@ -352,8 +352,8 @@ trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="
 [[2. Assume its all in your head and wait -&gt;Kick Back]]]&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Drive off" tags="" position="930,676" size="100,100">Since this is a story to show the importance of patience, we have to still come up with a negative aspect for not being patient. Right now we have only done the different postive outcomes and it eventually ties into each other.
 
-WIll add this part as soon as the base is complete.</tw-passagedata><tw-passagedata pid="10" name="Knock" tags="knock" position="569,780" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(event: when time &gt; 2s)[You decide to head up to the house and knock on the door.
+WIll add this part as soon as the base is complete.</tw-passagedata><tw-passagedata pid="10" name="Knock" tags="knock" position="569,780" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;You decide to head up to the house and knock on the door.
 
 (click: ?page)[As you walk up the stairs and you think to yourself, &quot;Wow, what a bright and welcoming entrance. Whoever lives here may not just be well off, but a whole hearted person as well.&quot;]
 
@@ -361,8 +361,9 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (click: ?page)[The door opens up and you are surprised by what you see ...]
 
-(click: ?page)[[[Continue -&gt;Door Opens]]]]&lt;/p&gt;
-&lt;/div&gt;{(track: &#39;door-knock&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="11" name="View House" tags="covered-furniture" position="588,1177" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+(click: ?page)[[[Continue -&gt;Door Opens]]]&lt;/p&gt;
+&lt;/div&gt;]
+{(track: &#39;door-knock&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="11" name="View House" tags="covered-furniture" position="588,1177" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[The apartment looks as if no one had lived in it for years. All the furniture was covered with sheets. There were no clocks on the walls, no knickknacks or utensils on the counters. In the corner was a cardboard box filled with photos and glassware.]
 
 (click: ?page)[Her fraile yet gentle voice calls out once again saying &quot;Would you be so kind and carry my bag out to the car?&quot;]
@@ -383,14 +384,12 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 (track: &#39;background-music&#39;, &#39;loop&#39;, true)
 (track: &#39;background-music&#39;, &#39;playwhenpossible&#39;)
 (track: &#39;background-music&#39;, &#39;volume&#39;, 0.3)
-}</tw-passagedata><tw-passagedata pid="14" name="configuration_header" tags="header" position="844,208" size="200,100">{(if: not (track: &quot;background-music&quot;, &quot;isplaying&quot;)) [
+}</tw-passagedata><tw-passagedata pid="14" name="configuration_header" tags="header" position="844,209" size="200,100">{(if: not (track: &quot;background-music&quot;, &quot;isplaying&quot;)) [
 	(track: &#39;background-music&#39;, &#39;loop&#39;, true)
 	(track: &#39;background-music&#39;, &#39;playwhenpossible&#39;)
 	(track: &#39;background-music&#39;, &#39;volume&#39;, 0.3)
 ]
-(link: &quot;Fullscreen&quot;)[
-	(set: _dummy to (window.document.documentElement.requestFullscreen()))
-	]
+
 }</tw-passagedata><tw-passagedata pid="15" name="hal.config" tags="" position="1109,205" size="200,100">showControls: false</tw-passagedata><tw-passagedata pid="16" name="Help her" tags="helping-hand" position="1278,1572" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[You decide to stride over to help her even if she does not require it. This surprises her, and she reciprocates in a receptive manner by putting her arm around yours, and you steadily lead her to the taxi.]
 
@@ -415,29 +414,29 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 (click: ?page)[You help her back into the car and you start to regret that you hadn&#39;t helped her or atleast stood by to help if she required it.]
 
 (click: ?page)[[[Get in the car -&gt;Drive3]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Help" tags="walk-up" position="201,1009" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(event: when time &gt; 3s)[You start making your way to the house, as you begin to worry and thought to see for your self if something was wrong. You think to yourself &quot;I sure hope it just might be in my head.&quot;]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Help" tags="walk-up" position="201,1009" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;You start making your way to the house, as you begin to worry and decide to see if something was wrong. You think to yourself &quot;I sure hope it just might be in my head.&quot;
 
 (event: when time &gt; 5s)[(click: ?page)[As you hasten up the stairs, &quot;Just a minute!&quot; calls out, a fraile and elderly voice.]
                 
 (click: ?page)[The door opens up and you are surprised by what you see ...]
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]]&lt;/p&gt;
-&lt;/div&gt;
+&lt;/div&gt;]
 {(track: &#39;walking-up-stairs&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="20" name="Kick Back" tags="kick-back" position="397,865" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[&quot;Agh! This heat must be getting to me, which is why I must be hearing things.&quot; You decide to keep waiting. You get out of the car wanting to strech your legs, and you walk around for a bit.]
 
 (click: ?page)[You then hear the sound of a lock unlocking, and it seems as if though someone is getting a hard time trying to unlock it. However by the time you reach the door, the door unlocks and what you see surprises you...]
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Door Opens" tags="door-opens" position="582,1003" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(event: when time &gt; 2s)[A small woman, arguably in her 90&#39;s stands before you wearing a pillbox hat with a veil pinned on it. She seems like she came directly out of a movie from the 1940&#39;s.]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Door Opens" tags="door-opens" position="582,1003" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;A small woman, arguably in her 90&#39;s stands before you wearing a pillbox hat with a veil pinned on it. She seems like she came directly out of a movie from the 1940&#39;s.
 
-(event: when time &gt; 4s)[(click: ?page)[&lt;div class=&quot;c_image&quot;&gt;&lt;img src=&quot;images/old-lady_0.jpg&quot; alt=&quot;Old Lady&quot; width=&quot;40%&quot; height=&quot;15%&quot;&gt;&lt;/div&gt;]
+(event: when time &gt; 4s)[(click: ?page)[&lt;div class=&quot;c_image&quot;&gt;&lt;img src=&quot;images/old-lady_0.jpg&quot; alt=&quot;Old Lady&quot; width=&quot;41%&quot; height=&quot;15%&quot;&gt;&lt;/div&gt;]
 (click: ?page)[The interior of her house peaks your interest.]
-
 (click: ?page)[[[Peak inside -&gt;View House]]]]&lt;/p&gt;
-&lt;/div&gt;{(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="22" name="Issues" tags="" position="1000,373" size="200,100">* Welcome needs a new background
+&lt;/div&gt;]
+{(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="22" name="Issues" tags="" position="845,342" size="200,100">* Welcome needs a new background
 * Helping hand needs a new background
 * Wait for her needs a new background
 
@@ -528,13 +527,13 @@ REMOVE FULLSCREEN UNLESS IT IS IN FULLSCREEN!</tw-passagedata><tw-passagedata pi
 (click: ?page)[[[Continue -&gt;Place3]]]
 &lt;/p&gt;
 &lt;/div&gt;]</tw-passagedata><tw-passagedata pid="33" name="Place3" tags="ballroom" position="775,2501" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;Next you pull up in front of an abandoned furniture warehouse, and you wonder how does this tie to her past.
+&lt;p&gt;Next you pull up in front of an abandoned furniture warehouse, and you wonder how this ties into her past.
 
 (click: ?page)[She tells you that this was the ballroom that she used to go dancing as a little girl.]
 
 (click: ?page)[[[Continue -&gt;Place4]]]
 &lt;/p&gt;
-&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="34" name="Place4" tags="staring" position="425,2604" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="34" name="Place4" tags="staring" position="424,2603" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You continue driving her around, and sometimes she&#39;d ask you to slow down in front of a particular building or corner. She&#39;d just stare into the dark abyss and say nothing.
 
 (click: ?page)	[&quot;At some point in time these could be places, where she had either joyful or sorrowful experiences.&quot;]
@@ -618,10 +617,10 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (else:)[Error:!!!#@#!!!]
 }
 (click: ?page)[[[Get in the car -&gt;Drive]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Drive" tags="in-cab" position="593,1772" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(event: when time &gt; 2s)[{(if: $choice2 is &quot;Help&quot;)[Before you can start your car, she calls you &quot;Son ...&quot;, with a beautiful smile hands you an address and asks you &quot;Could you drive through downtown?&quot;]}{
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Drive" tags="in-cab" position="593,1772" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;{(if: $choice2 is &quot;Help&quot;)[Before you can start your car, she calls you &quot;Son ...&quot;, with a beautiful smile hands you an address and asks you &quot;Could you drive through downtown?&quot;]}{
 (else-if: $choice2 is &quot;Wait&quot;)[Before you can start your car, she calls you &quot;Son ...&quot;, hands you an address and asks you &quot;Could you drive through downtown?&quot;]}{
-(else-if: $choice2 is &quot;Stay&quot;)[Before you can start your car, she calls you &quot;Son ...&quot;, with a gloomy face hands you an address and asks you &quot;Could you drive through downtown?&quot;]}]
+(else-if: $choice2 is &quot;Stay&quot;)[Before you can start your car, she calls you &quot;Son ...&quot;, with a gloomy face hands you an address and asks you &quot;Could you drive through downtown?&quot;]}
 
 (event: when time &gt; 4s)[(click: ?page)[You reply &quot;It&#39;s not the shortest way&quot;]
 
@@ -630,7 +629,7 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[The word alone breaks your heart. You adjust the rearview mirror and you look into it.]
 
 (click: ?page)[[[Look into the rearview mirror -&gt;Mirror]]]]&lt;/p&gt;
-&lt;/div&gt;
+&lt;/div&gt;]
 {
 (track: &#39;car-door&#39;, &#39;playwhenpossible&#39;)
 }</tw-passagedata><tw-passagedata pid="40" name="Mirror" tags="rearview-mirror" position="598,1990" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
@@ -661,8 +660,8 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[You get to the trunk to get her bag to the car.]
 
 (click: ?page)[[[Get her bag -&gt;Trunk]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="wheelchair" position="600,3100" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(event: when time &gt; 2s)[By the time you take out the bag and close the trunk, she was seated in her wheelchair. Reaching into her purse she asks ...
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="wheelchair" position="600,3100" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;By the time you take out the bag and close the trunk, she was seated in her wheelchair. Reaching into her purse she asks ...
 
 {(if: $choice3 is &quot;Meter_Off&quot;)[
 
@@ -696,8 +695,8 @@ Having driven her around for over 2 hours, the meter gave rise to a significant 
                 
 (click: ?page)[You can ...&lt;hr&gt; &lt;/p&gt;]&lt;div class=&quot;options&quot;&gt;(click: ?page)[(link: &quot;1. Take money from her&quot;)[ (set: $choice4 to &quot;Take&quot;) (goto:&quot;Money&quot;)]&lt;br&gt;
 (link: &quot;2. Take no money from her&quot;)[ (set: $choice4 to &quot;Nothing&quot;) (goto:&quot;Money&quot;)]]]
-}]&lt;/div&gt;&lt;/p&gt;
-&lt;/div&gt;
+}&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;]
 {
 &lt;!-- [[Money]] --&gt;
 (track: &#39;trunk-closing&#39;, &#39;playwhenpossible&#39;)
@@ -741,7 +740,9 @@ You turn around and just switch off the meter and you say ...&lt;br&gt;&lt;br&gt
                 
 (click: ?page)[[[Continue -&gt;Hug her]]]
 ]}&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="" position="601,3499" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="" position="601,3499" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Code Ref" tags="" position="1104,339" size="200,100">(link: &quot;Fullscreen&quot;)[
+	(set: _dummy to (window.document.documentElement.requestFullscreen()))
+	]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
