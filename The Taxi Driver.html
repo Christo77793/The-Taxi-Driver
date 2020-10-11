@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Taxi Driver" startnode="44" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
+<tw-storydata name="The Taxi Driver" startnode="4" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
   display: none;
 }
 
@@ -171,6 +171,19 @@ tw-story[tags~=end]{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+tw-story[tags~=hug-her]{
+  	background-image: url("images/hug_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+tw-story[tags~=choice]{
+  	background-image: url("images/choice_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 
 
 
@@ -720,7 +733,7 @@ Having driven her around for over 2 hours, the meter gave rise to a significant 
 {
 &lt;!-- [[Money]] --&gt;
 (track: &#39;trunk-closing&#39;, &#39;playwhenpossible&#39;)
-}</tw-passagedata><tw-passagedata pid="44" name="Hug her" tags="" position="599,3299" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="44" name="Hug her" tags="hug-her" position="599,3299" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[Without even thinking for a second, you bend over and give her a hug. She holds on to you tightly.]
 
 (click: ?page)[With a broken voice she says &quot;You gave an old woman a little moment of joy, Thank you!&quot;]
@@ -730,7 +743,7 @@ Having driven her around for over 2 hours, the meter gave rise to a significant 
 (click: ?page)[Not picking up anymore passengers, you drive aimlessly in thought. &quot;What if I had refused to take the run, or been impatient, or had honked once, then driven away?&quot;]
 
 (click: ?page)[[[Conclusion -&gt;The End]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Money" tags="" position="802,3200" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Money" tags="choice" position="802,3199" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;{(if: $choice4 is &quot;Take&quot;)[(click: ?page)[
 Looking at the meter, you tell her the exact amount, and she pays it in whole.&lt;br&gt;&lt;br&gt;
 ]
