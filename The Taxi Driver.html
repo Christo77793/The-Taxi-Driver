@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Taxi Driver" startnode="4" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
+<tw-storydata name="The Taxi Driver" startnode="44" creator="Twine" creator-version="2.3.9" ifid="F4C27256-4904-496A-AD46-6CF52359430B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-include[type="startup"]{ /*css to remove needless space*/
   display: none;
 }
 
@@ -162,6 +162,12 @@ tw-story[tags~=wheelchair]{
 
 tw-story[tags~=engine]{
   	background-image: url("images/engine_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+tw-story[tags~=end]{
+  	background-image: url("images/end_1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -714,7 +720,7 @@ Having driven her around for over 2 hours, the meter gave rise to a significant 
 {
 &lt;!-- [[Money]] --&gt;
 (track: &#39;trunk-closing&#39;, &#39;playwhenpossible&#39;)
-}</tw-passagedata><tw-passagedata pid="44" name="Hug her" tags="" position="599,3300" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="44" name="Hug her" tags="" position="599,3299" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[Without even thinking for a second, you bend over and give her a hug. She holds on to you tightly.]
 
 (click: ?page)[With a broken voice she says &quot;You gave an old woman a little moment of joy, Thank you!&quot;]
@@ -754,7 +760,7 @@ You turn around and just switch off the meter and you say ...&lt;br&gt;&lt;br&gt
                 
 (click: ?page)[[[Continue -&gt;Hug her]]]
 ]}&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="" position="598,3501" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Code Ref" tags="" position="1104,339" size="200,100">(link: &quot;Fullscreen&quot;)[
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="end" position="598,3502" size="100,100"></tw-passagedata><tw-passagedata pid="47" name="Code Ref" tags="" position="1104,339" size="200,100">(link: &quot;Fullscreen&quot;)[
 	(set: _dummy to (window.document.documentElement.requestFullscreen()))
 	]</tw-passagedata></tw-storydata>
 
