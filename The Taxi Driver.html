@@ -160,6 +160,14 @@ tw-story[tags~=wheelchair]{
     background-size: 100% 100%;
 }
 
+tw-story[tags~=engine]{
+  	background-image: url("images/engine_0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
 /*css to centralize text, transparent box, adn images*/
 .transbox{
   justify-content: center;
@@ -343,16 +351,24 @@ trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="
 &lt;!-- [[Drive off]] --&gt;
 (track: &#39;horn&#39;, &#39;playwhenpossible&#39;)
 (track: &#39;horn&#39;, &#39;volume&#39;, 0.3)
-}</tw-passagedata><tw-passagedata pid="8" name="Wait for them" tags="wait-car" position="214,676" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="8" name="Wait for them" tags="wait-car" position="202,703" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You decide that despite the circumstances that you&#39;d be patient and wait a little longer. The intolerable weather eventually gets to you and you doze off.
 
 (click: ?page)[You awaken to an exclaiming sound; this is weird as you open your eyes and the area is still empty. You wonder if it was a call for help. ]
 
 (click: ?page)[You choose to... &lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Walk up there and see if something is wrong -&gt;Help]]
 [[2. Assume its all in your head and wait -&gt;Kick Back]]]&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Drive off" tags="" position="930,676" size="100,100">Since this is a story to show the importance of patience, we have to still come up with a negative aspect for not being patient. Right now we have only done the different postive outcomes and it eventually ties into each other.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Drive off" tags="engine" position="900,702" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;You get annoyed as this is taking too long, and you decide that you are going to drive off.
 
-WIll add this part as soon as the base is complete.</tw-passagedata><tw-passagedata pid="10" name="Knock" tags="knock" position="569,780" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+(click: ?page)[As you are about to leave, the car stops abruptly. Looking into it, you notice that the engine cable is damaged.]
+
+(click: ?page)[Fixing it is going to take time, but being knowledged in the ins and outs of the car, you&#39;re glad it&#39;s something that can be fixed by yourself.]
+
+(click: ?page)[As soon as you are done, you hear someone struggling to get the door open and so you walk over to help out; but by the time you reach the door opens.]
+
+(click: ?page)[[[Continue -&gt;Door Opens]]]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Knock" tags="knock" position="578,803" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You decide to head up to the house and knock on the door.
 
 (click: ?page)[As you walk up the stairs and you think to yourself, &quot;Wow, what a bright and welcoming entrance. Whoever lives here may not just be well off, but a whole hearted person as well.&quot;]
@@ -414,7 +430,7 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 (click: ?page)[You help her back into the car and you start to regret that you hadn&#39;t helped her or atleast stood by to help if she required it.]
 
 (click: ?page)[[[Get in the car -&gt;Drive3]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Help" tags="walk-up" position="201,1009" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Help" tags="walk-up" position="123,930" size="100,100">(event: when time &gt; 3s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You start making your way to the house, as you begin to worry and decide to see if something was wrong. You think to yourself &quot;I sure hope it just might be in my head.&quot;
 
 (event: when time &gt; 5s)[(click: ?page)[As you hasten up the stairs, &quot;Just a minute!&quot; calls out, a fraile and elderly voice.]
@@ -423,7 +439,7 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]]&lt;/p&gt;
 &lt;/div&gt;]
-{(track: &#39;walking-up-stairs&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="20" name="Kick Back" tags="kick-back" position="397,865" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+{(track: &#39;walking-up-stairs&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="20" name="Kick Back" tags="kick-back" position="344,858" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[&quot;Agh! This heat must be getting to me, which is why I must be hearing things.&quot; You decide to keep waiting. You get out of the car wanting to strech your legs, and you walk around for a bit.]
 
 (click: ?page)[You then hear the sound of a lock unlocking, and it seems as if though someone is getting a hard time trying to unlock it. However by the time you reach the door, the door unlocks and what you see surprises you...]
@@ -434,13 +450,11 @@ WIll add this part as soon as the base is complete.</tw-passagedata><tw-passaged
 
 (event: when time &gt; 4s)[(click: ?page)[&lt;div class=&quot;c_image&quot;&gt;&lt;img src=&quot;images/old-lady_0.jpg&quot; alt=&quot;Old Lady&quot; width=&quot;41%&quot; height=&quot;15%&quot;&gt;&lt;/div&gt;]
 (click: ?page)[The interior of her house peaks your interest.]
-(click: ?page)[[[Peak inside -&gt;View House]]]]&lt;/p&gt;
+(click: ?page)[[[(Peak inside) -&gt;View House]]]]&lt;/p&gt;
 &lt;/div&gt;]
 {(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="22" name="Issues" tags="" position="845,342" size="200,100">* Welcome needs a new background
 * Helping hand needs a new background
-* Wait for her needs a new background
-
-REMOVE FULLSCREEN UNLESS IT IS IN FULLSCREEN!</tw-passagedata><tw-passagedata pid="23" name="Drive1" tags="in-cab" position="1278,1754" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+* Wait for her needs a new background</tw-passagedata><tw-passagedata pid="23" name="Drive1" tags="in-cab" position="1278,1754" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[Before you can start your car, she calls you &quot;Son ...&quot;, with a beautiful smile hands you an address and asks you &quot;Could you drive through downtown?&quot;]
 
 (event: when time &gt; 4s)[(click: ?page)[You reply &quot;It&#39;s not the shortest way&quot;]
@@ -740,7 +754,7 @@ You turn around and just switch off the meter and you say ...&lt;br&gt;&lt;br&gt
                 
 (click: ?page)[[[Continue -&gt;Hug her]]]
 ]}&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="" position="601,3499" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Code Ref" tags="" position="1104,339" size="200,100">(link: &quot;Fullscreen&quot;)[
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="" position="598,3501" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Code Ref" tags="" position="1104,339" size="200,100">(link: &quot;Fullscreen&quot;)[
 	(set: _dummy to (window.document.documentElement.requestFullscreen()))
 	]</tw-passagedata></tw-storydata>
 
