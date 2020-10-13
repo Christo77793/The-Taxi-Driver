@@ -185,9 +185,7 @@ tw-story[tags~=choice]{
 }
 
 
-
-
-/*css to centralize text, transparent box, adn images*/
+/*css to centralize text, transparent box, add images*/
 .transbox{
   justify-content: center;
   text-align: center;
@@ -378,15 +376,13 @@ trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="
 (click: ?page)[You choose to... &lt;hr&gt;]&lt;/p&gt;&lt;div class=&quot;options&quot;&gt;(click: ?page)[[[1. Walk up there and see if something is wrong -&gt;Help]]
 [[2. Assume its all in your head and wait -&gt;Kick Back]]]&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Drive off" tags="engine" position="900,702" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;You get annoyed as this is taking too long, and you decide that you are going to drive off.
+&lt;p&gt;This is taking too long and so you decide that you are going to drive off. As you are about to leave, the car stops abruptly. Upon inspection, you realise that the engine cable is damaged.
 
-(click: ?page)[As you are about to leave, the car stops abruptly. Looking into it, you notice that the engine cable is damaged.]
+(event: when time &gt; 2s)[(click: ?page)[Fixing it is going to take time, but being knowledged in the ins and outs of the car, you&#39;re glad it&#39;s something that can be fixed by yourself.]
 
-(click: ?page)[Fixing it is going to take time, but being knowledged in the ins and outs of the car, you&#39;re glad it&#39;s something that can be fixed by yourself.]
+(click: ?page)[Once you finish up the repairs, you begin to make your leave. As you are about to exit the gate, you hear someone calling out &quot;TAXIII!&quot;. Looking back you see an old woman standing at the door, and you head back.]
 
-(click: ?page)[As soon as you are done, you hear someone struggling to get the door open and so you walk over to help out; but by the time you reach the door opens.]
-
-(click: ?page)[[[Continue -&gt;Door Opens]]]&lt;/p&gt;
+(click: ?page)[[[Head Back -&gt;Go Back]]]]&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Knock" tags="knock" position="578,803" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;You decide to head up to the house and knock on the door.
 
@@ -398,7 +394,8 @@ trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="
 
 (click: ?page)[[[Continue -&gt;Door Opens]]]&lt;/p&gt;
 &lt;/div&gt;]
-{(track: &#39;door-knock&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="11" name="View House" tags="covered-furniture" position="588,1177" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+{(track: &#39;door-knock&#39;, &#39;playwhenpossible&#39;)
+(track: &#39;door-knock&#39;, &#39;volume&#39;, 1)}</tw-passagedata><tw-passagedata pid="11" name="View House" tags="covered-furniture" position="588,1177" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[The apartment looks as if no one had lived in it for years. All the furniture was covered with sheets. There were no clocks on the walls, no knickknacks or utensils on the counters. In the corner was a cardboard box filled with photos and glassware.]
 
 (click: ?page)[Her fraile yet gentle voice calls out once again saying &quot;Would you be so kind and carry my bag out to the car?&quot;]
@@ -471,9 +468,7 @@ trunk-closing: ./effects/trunk_closing.mp3</tw-passagedata><tw-passagedata pid="
 (click: ?page)[The interior of her house peaks your interest.]
 (click: ?page)[[[(Peak inside) -&gt;View House]]]]&lt;/p&gt;
 &lt;/div&gt;]
-{(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="22" name="Issues" tags="" position="845,342" size="200,100">* Welcome needs a new background
-* Helping hand needs a new background
-* Wait for her needs a new background</tw-passagedata><tw-passagedata pid="23" name="Drive1" tags="in-cab" position="1278,1754" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+{(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata><tw-passagedata pid="22" name="Issues" tags="" position="844,342" size="200,100"></tw-passagedata><tw-passagedata pid="23" name="Drive1" tags="in-cab" position="1278,1754" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(event: when time &gt; 2s)[Before you can start your car, she calls you &quot;Son ...&quot;, with a beautiful smile hands you an address and asks you &quot;Could you drive through downtown?&quot;]
 
 (event: when time &gt; 4s)[(click: ?page)[You reply &quot;It&#39;s not the shortest way&quot;]
@@ -604,7 +599,7 @@ Choose 4{
 /*Driver can take money*/
 	choice4: Take,
 	choice4: Nothing
-}</tw-passagedata><tw-passagedata pid="37" name="Choose 2" tags="backpack" position="593,1386" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="37" name="Choose 2" tags="backpack" position="591,1387" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[You carry her bag out to the car and put it into the trunk of the car. ]
 
 (click: ?page)[You turn around, you glance at her, and you then start to wonder if she might need help walking up to the car.]
@@ -659,7 +654,7 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 
 (click: ?page)[&quot;Oh, I don&#39;t mind. I&#39;m in no hurry. I&#39;m on my way to a hospice.&quot;]
 
-(click: ?page)[The word alone breaks your heart. You adjust the rearview mirror and you look into it.]
+(click: ?page)[That word alone breaks your heart. You adjust the rearview mirror and you look into it.]
 
 (click: ?page)[[[Look into the rearview mirror -&gt;Mirror]]]]&lt;/p&gt;
 &lt;/div&gt;]
@@ -683,7 +678,7 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[The first place she shows you is...]
             
 (click: ?page)[[[Continue -&gt;Place1]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Care Home" tags="care-home" position="601,2903" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Care Home" tags="care-home" position="600,2903" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;(click: ?page)[Finally you arrive at the address, she had wanted to come to in the first place. The building was a low building, a small convalescent home, that passed under a portico.]
 
 (click: ?page)[Two orderlies came out to the cab as soon as we pulled up. They were solicitous and intent, watching her every move.]
@@ -693,7 +688,7 @@ You help her back into the car and you start to regret that you hadn&#39;t helpe
 (click: ?page)[You get to the trunk to get her bag to the car.]
 
 (click: ?page)[[[Get her bag -&gt;Trunk]]]&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="wheelchair" position="600,3100" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Trunk" tags="wheelchair" position="599,3100" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
 &lt;p&gt;By the time you take out the bag and close the trunk, she was seated in her wheelchair. Reaching into her purse she asks ...
 
 {(if: $choice3 is &quot;Meter_Off&quot;)[
@@ -734,13 +729,36 @@ Having driven her around for over 2 hours, the meter gave rise to a significant 
 &lt;!-- [[Money]] --&gt;
 (track: &#39;trunk-closing&#39;, &#39;playwhenpossible&#39;)
 }</tw-passagedata><tw-passagedata pid="44" name="Hug her" tags="hug-her" position="599,3299" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
-&lt;p&gt;(click: ?page)[Without even thinking for a second, you bend over and give her a hug. She holds on to you tightly.]
+&lt;p&gt;
+{(if: $choice1 is &quot;Drive&quot;)[
 
-(click: ?page)[With a broken voice she says &quot;You gave an old woman a little moment of joy, Thank you!&quot;]
+You bend over to give her a hug, however she seems to be caught off guard and does not reciprocate.&lt;br&gt;&lt;br&gt;
 
-(click: ?page)[You squeeze her hand, and then walk away. A door shuts. Like the sound of closing of a life, the sound resonates to your ears.]
+(click: ?page)[
+&quot;To think I gave this up, because I was about to drive away. I am glad I didn&#39;t. She smiles and shakes a finger of yours. &quot;&lt;br&gt;&lt;br&gt;
+]
 
-(click: ?page)[Not picking up anymore passengers, you drive aimlessly in thought. &quot;What if I had refused to take the run, or been impatient, or had honked once, then driven away?&quot;]
+(click: ?page)[
+You then walk away. A door shuts. Like the sound of closing of a life, the sound resonates to your ears.&lt;br&gt;&lt;br&gt;
+]
+
+(click: ?page)[
+Not picking up anymore passengers, you drive aimlessly in thought. &quot;If I had been anymore impatient ...&quot;
+]]
+}{                
+(else:)[
+
+Without even thinking for a second, you bend over and give her a hug. She holds on to you tightly. With a broken voice she says &quot;You gave an old woman a little moment of joy, Thank you!&quot;&lt;br&gt;&lt;br&gt;
+
+                
+(click: ?page)[
+You squeeze her hand, and then walk away. A door shuts. Like the sound of closing of a life, the sound resonates to your ears.&lt;br&gt;&lt;br&gt;
+]
+                
+(click: ?page)[
+Not picking up anymore passengers, you drive aimlessly in thought. &quot;What if I had been impatient, or had honked once, then driven away?&quot;
+]]
+}
 
 (click: ?page)[[[Conclusion -&gt;The End]]]&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Money" tags="choice" position="802,3199" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
@@ -773,9 +791,28 @@ You turn around and just switch off the meter and you say ...&lt;br&gt;&lt;br&gt
                 
 (click: ?page)[[[Continue -&gt;Hug her]]]
 ]}&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="end" position="598,3502" size="100,100"></tw-passagedata><tw-passagedata pid="47" name="Code Ref" tags="" position="1104,339" size="200,100">(link: &quot;Fullscreen&quot;)[
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="The End" tags="end" position="600,3500" size="100,100">&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;(click: ?page)[This is the message that we wanted to convey, with our story.]
+
+(click: ?page)[Patience isn’t limited to the simple definition of the dictionary, and it goes beyond simple words.]
+
+(click: ?page)[Not just in our work places, but most importantly patience is an essential moral value that is fruitful in all aspects of our lives.]
+
+(click: ?page)[The virtue of being patient, does not yield it&#39;s fruit instantly, it may take days or months or even years, but the fruit bore, will a rewards that is absolutely priceless; depending on the context.]
+
+(click: ?page)[Thank you]&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Code Ref" tags="" position="1104,339" size="200,100">(link: &quot;Fullscreen&quot;)[
 	(set: _dummy to (window.document.documentElement.requestFullscreen()))
-	]</tw-passagedata></tw-storydata>
+	]</tw-passagedata><tw-passagedata pid="48" name="Go Back" tags="door-opens" position="900,1001" size="100,100">(event: when time &gt; 2s)[&lt;div class=&quot;transbox&quot;&gt;
+&lt;p&gt;A small woman, arguably in her 90&#39;s stands before you wearing a pillbox hat with a veil pinned on it. She seems like she came directly out of a movie from the 1940&#39;s.
+
+(event: when time &gt; 4s)[(click: ?page)[&quot;I almost had to run behind you&quot;, she says as she slowly pants.]
+
+(click: ?page)[&quot;An elegant home,&quot; you think to yourself. &quot;Maybe I can relax inside till we are ready to leave&quot; and you look inside.]
+
+(click: ?page)[[[(Look inside) -&gt;View House]]]]&lt;/p&gt;
+&lt;/div&gt;]
+{(track: &#39;open-door&#39;, &#39;playwhenpossible&#39;)}</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
